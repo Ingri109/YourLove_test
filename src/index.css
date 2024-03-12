@@ -1,0 +1,36 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+  }
+  
+  /* Використовуємо Tailwind CSS для задання стилів анімації */
+  @keyframes scaleInTw {
+    from {
+      opacity: 0;
+      transform: translateY(-20px) scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .animate-scaleIn {
+    animation: scaleInTw 0.5s ease-out;
+  }
+
